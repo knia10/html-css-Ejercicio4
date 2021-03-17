@@ -1,0 +1,154 @@
+html{
+    background-color: papayawhip;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh; /*?*/
+    margin: 0;
+    padding: 0;
+}
+
+.contain{
+    width: 100%;
+    height: 10vh;
+    margin: 0;
+    padding: 0;
+}
+
+.box{
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;  /*?*/ 
+}
+
+.box .column-50{
+    width: 40%; /*separacion de la img*/ 
+    height: 100%;
+}
+
+.box .column-50 figure{
+    margin: 10px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.box .column-50 figure img{
+    height: 500px;
+    border-radius: 12px;
+    margin-top: 8%;
+}
+
+.box .column-70{ /*separacion del formulario con la img*/ 
+    width: 70%;
+    height: 100vh;
+    padding-left: 30px;
+    box-sizing: border-box;
+}
+
+.box .column-70 form{
+    width: 100%; 
+}
+
+.box .column-70 form .div-group{
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.box .column-70 form .div-group h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2.0rem;
+    margin: 4px;
+    padding: 0;
+}
+
+.box .column-70 form .div-group ul{
+     text-decoration: rebeccapurple;
+     list-style: none;
+     padding-left: 0;
+     margin: 0;
+}
+
+.box .column-70 form .div-group ul li{
+    padding: 5px 20px 5px 20px;
+}
+
+.box .column-70 form .div-group ul li label{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.3rem;
+}
+
+.box .column-70 form .div-group ul li input{ 
+    width: 17px;
+    height: 17px;
+    border: solid 1px burlywood
+}
+
+.box .column-70 form .div-group ul li input:checked{
+    border: solid 1px burlywood;
+    color: burlywood;
+}
+
+.box .column-70 form .div-group:nth-child(3){
+    display: flex;
+    width: 100%;
+}
+
+.box .column-70 form .div-group:nth-child(3) input{  /*estilo de espacio de datos personales*/
+    padding: 10px 7px;
+    margin: 0 auto;
+    border: solid 1px #0891d1;
+    border-radius: 5px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.1rem;
+    color: #1b81b1;
+    outline: none;
+}
+
+.box .column-70 form .div-group:nth-child(3) input:focus{ /* al seleccionar un espacio cambia el color*/
+    border: solid 2px rgb(183, 135, 222);
+    box-sizing: border-box;
+}
+
+.box .column-70 form .div-group:nth-child(3) input:active{
+    border: none;
+}
+
+.box .col-70 form .div-group:nth-child(4){
+    display: flex;
+    flex-direction: column;
+}
+
+.box .column-70 form .div-group:nth-child(4) label{ /*estilo de conten.comentario*/
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    color: rgb(221, 100, 237);
+}
+
+.box .column-70 form .div-group:nth-child(4) textarea{ /*estilo del texarea*/
+    border-radius: 10px;
+    outline: none;
+    padding: 10px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.1rem;
+    color: #0891d1;
+}
+
+.box .column-70 form .div-group:nth-child(5) button{ /*estilo y letra del boton*/
+    border-radius: 17px;
+    padding: 10px 5px;
+    width: 100%;
+    background-color: #0891d1;
+    color: rgb(240, 222, 222);
+    font-size: 1.3rem;
+}
+
+.box .column-70 form .div-group:nth-child(5) button:hover{ /* al pasar el cursor cambia de color*/
+    background-color: rgb(221, 100, 237);
+    cursor: pointer;
+}
